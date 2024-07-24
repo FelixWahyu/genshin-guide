@@ -207,61 +207,26 @@ body {
   padding: 0 1rem;
 }
 
-.character .char-pyro {
-  background: linear-gradient(180deg, #d43323, #000000);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+.character a {
   color: var(--font);
-  text-align: center;
+}
+
+.character .char-main {
+  width: 25rem;
   transition: all 0.3s;
   border-radius: 8px;
+  border: 1px solid var(--line);
 }
 
-.character .char-hydro {
-  background: linear-gradient(180deg, #1e3db1, #000000);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: var(--font);
-  text-align: center;
-  transition: all 0.3s;
+.character .char-main img {
+  width: 100%;
+  height: auto;
   border-radius: 8px;
 }
 
-.character .char-electro {
-  background: linear-gradient(180deg, #ab5ec6, #000000);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: var(--font);
-  text-align: center;
-  transition: transform 0.3s;
-  border-radius: 8px;
-}
-
-.character .char-deandro {
-  background: linear-gradient(180deg, #4bc828, #000000);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: var(--font);
-  text-align: center;
-  transition: 0.3s;
-  border-radius: 8px;
-}
-
-.character .active:hover {
+.character .char-main:hover {
   box-shadow: 1px 1px 3px 3px goldenrod;
   cursor: pointer;
-}
-
-.character img {
-  width: 15rem;
-}
-
-:where(.char-deandro, .char-anemo, .char-hydro, .char-pyro, .char-electro) {
-  border: 1px solid var(--line);
 }
 
 /* Guide section */
@@ -318,11 +283,6 @@ body {
 
 .guide .btn:hover {
   background-color: var(--primary);
-}
-
-/* Halaman Xialing guide */
-h1 {
-  margin-top: 150px;
 }
 
 /* Footer section */
@@ -480,6 +440,17 @@ h1 {
     font-size: 1.6rem;
   }
 
+  .character a {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .character .char-main {
+    margin-top: 1.5rem;
+    width: 100%;
+    height: auto;
+  }
+
   .menu p {
     font-size: 1.3rem;
   }
@@ -498,6 +469,10 @@ h1 {
 
   .modal-content {
     flex-wrap: wrap;
+  }
+
+  .footer .footer-content {
+    display: block;
   }
 }
 

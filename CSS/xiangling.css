@@ -137,25 +137,159 @@ h1 {
 }
 
 .main .main-content {
-  background: linear-gradient(to bottom, #d43323, #000000);
   border: 1px solid var(--line);
+  border-radius: 8px;
+  width: 30%;
+}
+
+.main .main-content img {
+  width: 100%;
+  height: auto;
   border-radius: 8px;
 }
 
 .side-content {
   border: 1px solid var(--line);
   border-radius: 8px;
-  width: 60%;
+  width: 70%;
   height: auto;
   margin: 2rem 4rem;
+  padding: 1rem;
 }
 
 .side-content .stat {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 45%;
+  width: 90%;
   margin: 1.4rem 0.7rem;
+  font-size: 1.3rem;
+}
+
+.side-content .stat .stars {
+  color: gold;
+}
+
+.side-content .stastistik {
+  margin-top: 5rem;
+  display: block;
+  font-size: 1.3rem;
+}
+
+.stastistik .materials {
+  margin: 1.4rem 0.7rem;
+}
+
+.side-content .stastistik h4 {
+  text-align: center;
+}
+
+.side-content .stastistik .total-material {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side-content .total-material img {
+  width: 4rem;
+  margin: 0 0.5rem;
+}
+
+/* Section weapon & artifact recommended */
+.main-weapon,
+.main-artifact {
+  margin: 2rem;
+  padding: 2rem;
+}
+
+.main-weapon h2,
+.main-artifact h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+table {
+  border: 1px solid var(--line);
+  border-collapse: collapse;
+  width: 90%;
+  font-size: 1.5rem;
+}
+
+th {
+  width: 50%;
+  border: 1px solid var(--line);
+  padding: 0.7rem 0;
+  text-align: center;
+}
+
+td {
+  border: 1px solid var(--line);
+  padding: 0.5rem 3rem;
+}
+
+.main-weapon .set-weapon,
+.main-artifact .set-arte {
+  background-color: var(--primary);
+}
+
+/* section upgrade talent */
+.main-talent {
+  margin: 2rem;
+  padding: 2rem;
+}
+
+.main-talent h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.main-talent .talent-upgrade {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--line);
+  padding: 1.5rem;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.talent-upgrade .arrow-icon1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.talent-upgrade .arrow-icon2 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  display: none;
+}
+
+/* section teams */
+.main-teams {
+  margin: 2rem;
+  padding: 2rem;
+}
+
+.main-teams h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.main-teams .best-teams {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.best-teams .teams1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: 1px solid var(--line);
+  padding: 2rem;
+  text-align: center;
 }
 
 /* Footer section */
@@ -288,6 +422,49 @@ h1 {
   .navbar .search-form {
     width: 90%;
     right: 2rem;
+  }
+
+  .main {
+    display: block;
+  }
+
+  .main .main-content {
+    width: 100%;
+    height: auto;
+  }
+
+  .main .side-content {
+    width: 100%;
+    height: auto;
+    margin: 2rem 0;
+  }
+
+  .main .side-content .stat {
+    width: 100%;
+    height: auto;
+    padding-right: 1rem;
+    font-size: 1.4rem;
+  }
+
+  table {
+    font-size: 1.5rem;
+    width: 100%;
+  }
+
+  .main-talent .talent-upgrade {
+    display: block;
+  }
+
+  .talent-upgrade .arrow-icon1 {
+    display: none;
+  }
+
+  .talent-upgrade .arrow-icon2 {
+    display: block;
+  }
+
+  .footer .footer-content {
+    display: block;
   }
 }
 
