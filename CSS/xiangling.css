@@ -22,7 +22,6 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
   color: var(--font);
-  /* min-height: 2000px; */
 }
 
 /* Navbar */
@@ -196,7 +195,9 @@ h1 {
 
 /* Section weapon & artifact recommended */
 .main-weapon,
-.main-artifact {
+.main-artifact,
+.main-talent,
+.main-teams {
   margin: 2rem;
   padding: 2rem;
 }
@@ -232,11 +233,6 @@ td {
 }
 
 /* section upgrade talent */
-.main-talent {
-  margin: 2rem;
-  padding: 2rem;
-}
-
 .main-talent h2 {
   font-size: 2rem;
   text-align: center;
@@ -251,6 +247,7 @@ td {
   padding: 1.5rem;
   font-size: 1.4rem;
   text-align: center;
+  border-radius: 10px;
 }
 
 .talent-upgrade .arrow-icon1 {
@@ -265,15 +262,15 @@ td {
 }
 
 /* section teams */
-.main-teams {
-  margin: 2rem;
-  padding: 2rem;
-}
-
 .main-teams h2 {
   font-size: 2rem;
   text-align: center;
   margin-bottom: 2rem;
+}
+
+.main-teams h3 {
+  font-size: 1.6rem;
+  margin: 0.5rem 1rem;
 }
 
 .main-teams .best-teams {
@@ -290,6 +287,7 @@ td {
   border: 1px solid var(--line);
   padding: 2rem;
   text-align: center;
+  border-radius: 10px;
 }
 
 /* Footer section */
